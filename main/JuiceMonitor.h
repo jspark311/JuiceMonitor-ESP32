@@ -33,10 +33,10 @@ This header file is the top-level description of the project's hardware. Some
 #include "CppPotpourri.h"
 #include "AbstractPlatform.h"
 #include "StringBuilder.h"
-#include "ParsingConsole.h"
-#include "StopWatch.h"
 #include "SensorFilter.h"
-#include "I2CAdapter.h"
+#include "Console/C3PConsole.h"
+#include "TimerTools/TimerTools.h"
+#include "BusQueue/I2CAdapter.h"
 
 
 /*

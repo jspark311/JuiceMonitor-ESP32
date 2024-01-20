@@ -229,8 +229,8 @@ void app_main() {
   i2c0.init();
 
   // Assign i2c0 to devices attached to it.
-  pwr_sensor.assignBusInstance(&i2c0);
-  offboard_gpio.assignBusInstance(&i2c0);
+  pwr_sensor.setAdapter(&i2c0);
+  offboard_gpio.setAdapter(&i2c0);
 
   offboard_gpio.attachInterrupt(TEST_PIN_4_PIN, mcp23017_callback_fxn, IRQCondition::CHANGE);
   offboard_gpio.attachInterrupt(TEST_PIN_D_PIN, mcp23017_callback_fxn, IRQCondition::RISING);
