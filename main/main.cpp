@@ -34,7 +34,7 @@ const I2CAdapterOptions i2c0_opts(
   200000  // 200kHz
 );
 
-I2CAdapter i2c0(&i2c0_opts);
+I2CAdapter i2c0(&i2c0_opts, 4, 24);
 
 
 /* Power monitoring sensor. */
